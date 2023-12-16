@@ -1,0 +1,9 @@
+{
+	"name": "C4D-Msg",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "https://github.com/Code4Delphi/C4D-Msg",
+	"mainsrc": "Src",
+	"projects": [],
+	"dependencies": {}
+}
