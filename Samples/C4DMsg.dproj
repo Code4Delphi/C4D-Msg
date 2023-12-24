@@ -99,7 +99,7 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="Src\View\C4DMsg.View.Main.pas">
-            <Form>Form1</Form>
+            <Form>C4DMsgViewMain</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="..\Src\C4D.Msg.pas"/>

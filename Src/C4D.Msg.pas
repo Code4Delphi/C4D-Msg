@@ -9,15 +9,18 @@ uses
   C4D.Params,
   C4D.Msg.View;
 
-procedure ShowMsg(const AMsg: string; const Adetails: string = '');
-procedure ShowError(const AMsg: string; const Adetails: string = '');
-procedure ShowObligatory(const AMsg: string = ''; const Adetails: string = '');
-procedure ShowSuccess(const AMsg: string = ''; const Adetails: string = '');
-function ShowQuestion(const AMsg: string; const Adetails: string = ''): Boolean;
+procedure ShowMsg(const AMsg: string; const ADetails: string = '');
+procedure ShowWarning(const AMsg: string; const ADetails: string = '');
+procedure ShowSuccess(const AMsg: string = ''; const ADetails: string = '');
+procedure ShowError(const AMsg: string; const ADetails: string = '');
+procedure ShowPermission(const AMsg: string; const ADetails: string = '');
+procedure ShowObligatory(const AMsg: string = ''; const ADetails: string = '');
+procedure ShowEmpty(const AMsg: string; const ADetails: string = '');
+function ShowQuestion(const AMsg: string; const ADetails: string = ''): Boolean;
 
 implementation
 
-function C4DShow(const AMsg, Adetails: string; const AIcon: TC4DIcons): Boolean;
+function C4DShow(const AMsg, ADetails: string; const AIcon: TC4DIcons): Boolean;
 var
   LParams: TC4DParams;
   LView: TC4DMsgView;
@@ -26,7 +29,7 @@ begin
   try
     LParams.Icon := AIcon;
     LParams.Msg := AMsg;
-    LParams.Details := Adetails;
+    LParams.Details := ADetails;
 
     LView := TC4DMsgView.Create(nil);
     try
@@ -40,17 +43,32 @@ begin
   end;
 end;
 
-procedure ShowMsg(const AMsg: string; const Adetails: string = '');
+procedure ShowMsg(const AMsg: string; const ADetails: string = '');
 begin
-  C4DShow(AMsg, Adetails, TC4DIcons.Msg);
+  C4DShow(AMsg, ADetails, TC4DIcons.Msg);
 end;
 
-procedure ShowError(const AMsg: string; const Adetails: string = '');
+procedure ShowWarning(const AMsg: string; const ADetails: string = '');
 begin
-  C4DShow(AMsg, Adetails, TC4DIcons.Error);
+  C4DShow(AMsg, ADetails, TC4DIcons.Warning);
 end;
 
-procedure ShowObligatory(const AMsg: string = ''; const Adetails: string = '');
+procedure ShowSuccess(const AMsg: string = ''; const ADetails: string = '');
+begin
+  C4DShow(AMsg, ADetails, TC4DIcons.Success);
+end;
+
+procedure ShowError(const AMsg: string; const ADetails: string = '');
+begin
+  C4DShow(AMsg, ADetails, TC4DIcons.Error);
+end;
+
+procedure ShowPermission(const AMsg: string; const ADetails: string = '');
+begin
+  C4DShow(AMsg, ADetails, TC4DIcons.Permission);
+end;
+
+procedure ShowObligatory(const AMsg: string = ''; const ADetails: string = '');
 var
   LMsg: string;
 begin
@@ -58,17 +76,17 @@ begin
   if(LMsg.Trim.IsEmpty)then
     LMsg := 'Campo obrigatório sem preenchimento';
 
-  C4DShow(LMsg, Adetails, TC4DIcons.Obligatory);
+  C4DShow(LMsg, ADetails, TC4DIcons.Obligatory);
 end;
 
-procedure ShowSuccess(const AMsg: string = ''; const Adetails: string = '');
+procedure ShowEmpty(const AMsg: string; const ADetails: string = '');
 begin
-  C4DShow(AMsg, Adetails, TC4DIcons.Success);
+  C4DShow(AMsg, ADetails, TC4DIcons.Empty);
 end;
 
-function ShowQuestion(const AMsg: string; const Adetails: string = ''): Boolean;
+function ShowQuestion(const AMsg: string; const ADetails: string = ''): Boolean;
 begin
-  Result := C4DShow(AMsg, Adetails, TC4DIcons.Question);
+  Result := C4DShow(AMsg, ADetails, TC4DIcons.Question);
 end;
 
 end.
