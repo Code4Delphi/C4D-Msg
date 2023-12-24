@@ -31,3 +31,10 @@ Com o C4D-Version, você pode fazer o controle da versão do seu sistema atravé
 
 
 ## ⚙️ Instalação
+
+
+## 🎮 Como usar
+* Add a uses
+```
+  C4D.Msg
+```
