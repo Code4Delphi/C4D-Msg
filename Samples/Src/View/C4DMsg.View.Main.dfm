@@ -511,8 +511,7 @@ object C4DMsgViewMain: TC4DMsgViewMain
         Layout = tlCenter
         OnClick = lbYoutubeClick
         ExplicitLeft = 6
-        ExplicitTop = 36
-        ExplicitWidth = 267
+        ExplicitTop = 33
       end
     end
   end

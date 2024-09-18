@@ -60,7 +60,7 @@ implementation
 procedure TC4DMsgViewMain.btnMsgClick(Sender: TObject);
 begin
   //C4DShow('Mensagem workshop', 'Detalhes', TC4DIcons.Msg);
-  ShowMsg('Mensagem de teste com detalhes', 'Mais detalhes aqui');
+  ShowMsg('Minha mensagem', 'Mais detalhes (opcional)');
   ShowMsg('Mensagem de teste sem detalhes');
 end;
 
