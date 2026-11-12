@@ -1,0 +1,35 @@
+# =====================================================================================================
+# TMS Smart Setup configuration file for product C4D Msg
+# See https://doc.tmssoftware.com/smartsetup/guide/creating-bundles.html#creating-a-tmsbuildyaml-file
+# =====================================================================================================
+# yaml-language-server: $schema=https://raw.githubusercontent.com/tmssoftware/smartsetup/refs/heads/main/tms/example-config/tmsbuild.schema.json
+
+minimum required tmsbuild version: 3.5
+
+# General information about the product.
+application:
+  id: c4d.msg
+  name: C4D Msg
+  url: https://github.com/Code4Delphi/C4D-Msg
+
+# Frameworks are just a group of supported IDEs and platforms. You can define as much as you want with any name you desire, and then combine them to specify what platforms and IDEs the packages support.
+supported frameworks:
+  vcl:
+    ide since: delphiseattle
+    platforms:
+      - win32intel
+
+# List of packages in the library. Each package must have a unique name, and must be listed only once.
+packages:
+  - C4DMsg: [runtime, vcl]
+
+# Only include this section if the library doesn't provide its own packages, or those are unusable. In that case, we will create them with the definitions below.
+# Note: This section must come after you have specified the "packages" section above.
+package definitions:
+  C4DMsg:
+    framework type: VCL
+    requires: rtl;vcl
+    files:
+      - source:
+          folder: Src
+          recursive: false
