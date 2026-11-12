@@ -25,7 +25,7 @@ implementation
 constructor TC4DParams.Create;
 begin
   FIcon := TC4DIcons.Msg;
-  FCaption := 'Mensagem do sistema';
+  FCaption := 'System message';
   FMsg := '';
   FDetails := '';
 end;

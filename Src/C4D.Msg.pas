@@ -74,7 +74,7 @@ var
 begin
   LMsg := AMsg;
   if(LMsg.Trim.IsEmpty)then
-    LMsg := 'Campo obrigatório sem preenchimento';
+    LMsg := 'Required field not filled in';
 
   C4DShow(LMsg, ADetails, TC4DIcons.Obligatory);
 end;

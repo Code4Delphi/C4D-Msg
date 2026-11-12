@@ -74,7 +74,7 @@ begin
   mmDetails.Text := FParams.Details.Trim;
 
   mmDetails.Visible := False;
-  lbSeeDetails.Caption := 'Ver mais detalhes >>';
+  lbSeeDetails.Caption := 'View more details >>';
   lbSeeDetails.Visible := mmDetails.Text <> '';
 
   Self.ConfigButtons;
@@ -124,7 +124,7 @@ end;
 procedure TC4DMsgView.ConfigButtons;
 begin
   btnNo.Visible := FParams.Icon = TC4DIcons.Question;
-  btnYes.Caption := 'Sim &1';
+  btnYes.Caption := 'Yes &1';
   if(FParams.Icon <> TC4DIcons.Question)then
     btnYes.Caption := 'OK &1';
 end;
@@ -134,13 +134,13 @@ begin
   if(mmDetails.Visible)then
   begin
     mmDetails.Visible := False;
-    lbSeeDetails.Caption := 'Ver mais detalhes >>';
+    lbSeeDetails.Caption := 'View more details >>';
     Self.Height := FHeightFormWithdrawn;
   end
   else
   begin
     mmDetails.Visible := True;
-    lbSeeDetails.Caption := 'Ver menos detalhes <<';
+    lbSeeDetails.Caption := 'Hide details <<';
     Self.Height := FHeightFormExpanded;
   end;
   Self.Refresh;

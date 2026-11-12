@@ -1,7 +1,7 @@
 object C4DMsgViewMain: TC4DMsgViewMain
   Left = 0
   Top = 0
-  Caption = 'Code4Delphi - Mensagens'
+  Caption = 'Code4Delphi - Messages'
   ClientHeight = 414
   ClientWidth = 508
   Color = clBtnFace
@@ -11,12 +11,10 @@ object C4DMsgViewMain: TC4DMsgViewMain
   Font.Name = 'Tahoma'
   Font.Style = []
   KeyPreview = True
-  OldCreateOrder = False
   Position = poScreenCenter
   DesignSize = (
     508
     414)
-  PixelsPerInch = 96
   TextHeight = 13
   object btnMsg: TButton
     AlignWithMargins = True

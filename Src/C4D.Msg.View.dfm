@@ -3,7 +3,7 @@ object C4DMsgView: TC4DMsgView
   Left = 309
   Top = 159
   BorderIcons = []
-  Caption = 'Mensagem do sistema'
+  Caption = 'System message'
   ClientHeight = 351
   ClientWidth = 602
   Color = clBtnFace
@@ -1017,12 +1017,10 @@ object C4DMsgView: TC4DMsgView
     0000F83F0000F87F0000F07F0000E0DF0000C00F000080030000E01F0000F03F
     0000FCFF0000}
   KeyPreview = True
-  OldCreateOrder = False
   Position = poScreenCenter
   OnCreate = FormCreate
   OnKeyDown = FormKeyDown
   OnShow = FormShow
-  PixelsPerInch = 96
   TextHeight = 14
   object pnButtons: TPanel
     Left = 0
@@ -1044,7 +1042,7 @@ object C4DMsgView: TC4DMsgView
       Height = 32
       Cursor = crHandPoint
       Align = alRight
-      Caption = 'Sim &1'
+      Caption = 'Yes &1'
       TabOrder = 0
       OnClick = btnYesClick
     end
@@ -1055,7 +1053,7 @@ object C4DMsgView: TC4DMsgView
       Height = 32
       Cursor = crHandPoint
       Align = alRight
-      Caption = 'N'#227'o &2'
+      Caption = 'No &2'
       TabOrder = 1
       OnClick = btnNoClick
     end
@@ -1124,13 +1122,13 @@ object C4DMsgView: TC4DMsgView
         ParentBackground = False
         TabOrder = 0
         object lbSeeDetails: TLabel
-          Left = 97
+          Left = 93
           Top = -1
-          Width = 115
+          Width = 119
           Height = 14
           Cursor = crHandPoint
           Alignment = taRightJustify
-          Caption = 'Ver mais detalhes >>'
+          Caption = 'View more details. >>'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -11

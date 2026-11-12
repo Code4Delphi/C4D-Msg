@@ -59,29 +59,28 @@ implementation
 
 procedure TC4DMsgViewMain.btnMsgClick(Sender: TObject);
 begin
-  //C4DShow('Mensagem workshop', 'Detalhes', TC4DIcons.Msg);
-  ShowMsg('Minha mensagem', 'Mais detalhes (opcional)');
-  ShowMsg('Mensagem de teste sem detalhes');
+  ShowMsg('My message', 'More details (optional)');
+  ShowMsg('Test message without details');
 end;
 
 procedure TC4DMsgViewMain.btnWarningClick(Sender: TObject);
 begin
-  ShowWarning('Mensagem de teste [Warning]', 'Aqui mais detalhes');
+  ShowWarning('Test message [Warning]', 'More details');
 end;
 
 procedure TC4DMsgViewMain.btnSuccessClick(Sender: TObject);
 begin
-  ShowSuccess('Mensagem de teste [Success]', 'Aqui mais detalhes');
+  ShowSuccess('Test message [Success]', 'More details');
 end;
 
 procedure TC4DMsgViewMain.btnErrorClick(Sender: TObject);
 begin
-  ShowError('Menssgem de teste [Error]', 'Mais detalhes');
+  ShowError('Test message [Error]', 'More details');
 end;
 
 procedure TC4DMsgViewMain.btnPermissionClick(Sender: TObject);
 begin
-  ShowPermission('Mensagem de teste [Permission]', 'Aqui mais detalhes');
+  ShowPermission('Test message [Permission]', 'More details');
 end;
 
 procedure TC4DMsgViewMain.btnObligatoryClick(Sender: TObject);
@@ -91,15 +90,15 @@ end;
 
 procedure TC4DMsgViewMain.btnEmptyClick(Sender: TObject);
 begin
-  ShowEmpty('Mensagem de teste [Empty]', 'Nenhum resultado encontrado');
+  ShowEmpty('Test message [Empty]', 'No results found');
 end;
 
 procedure TC4DMsgViewMain.btnQuestionClick(Sender: TObject);
 begin
-  if(ShowQuestion('Minha pergunta', 'Meus detalhes'))then
-    ShowSuccess('Respondeu sim')
+  if ShowQuestion('My question', 'More details') then
+    ShowSuccess('You answered YES')
   else
-    ShowError('Respondeu não');
+    ShowError('You answered NO');
 end;
 
 procedure TC4DMsgViewMain.lbYoutubeClick(Sender: TObject);
