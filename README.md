@@ -1,20 +1,21 @@
 # C4D-Msg - Control your system's message quickly, easily and centrally
-<p align="center">
-  <a href="https://github.com/Code4Delphi/Code4D-Wizard/blob/master/Images/C4D-Logo.png">
-    <img alt="Code4Delphi" height="100" src="https://github.com/Code4Delphi/Code4D-Wizard/blob/master/Images/c4d-logo-100x100.png">
-  </a> 
-</p>
 With C4D-Msg you can control your system messages quickly, easily and centrally
 
 
 
 ## ⚙️ Installation
 
-* Installation using the [**Boss**](https://github.com/HashLoad/boss):
+* Installation using the [**TMS Smart Setup**](https://doc.tmssoftware.com/smartsetup/):
 
 ```
-boss install github.com/Code4Delphi/C4D-Msg
+tms install c4d.msg
 ```
+
+> [!TIP]
+> The c4d.msg file is located on the Community server, which is disabled by default. On a machine where it hasn't been enabled yet, run the following first: tms server-enable community
+>
+
+<br>
 
 * **Manual installation**: Open your Delphi and add the following folder to your project, under *Project > Options > Resource Compiler > Directories and Conditionals > Include file search path*
 
@@ -104,3 +105,13 @@ To submit a pull request, follow these steps:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/cesar-cardoso-dev)
 [![Blog](https://img.shields.io/badge/Blog-Code4Delphi-F00?logo=delphi)](https://code4delphi.com.br/blog/)
 [![E-mail](https://img.shields.io/badge/E--mail-Send-yellowgreen?logo=maildotru&logoColor=yellowgreen)](mailto:contato@code4delphi.com.br)
+
+---
+
+<p align="center">
+  <a href="https://github.com/Code4Delphi/Code4D-Wizard/blob/master/Images/C4D-Logo.png">
+    <img alt="Code4Delphi" height="100" src="https://github.com/Code4Delphi/Code4D-Wizard/blob/master/Images/c4d-logo-100x100.png">
+  </a> 
+</p>
+
+
