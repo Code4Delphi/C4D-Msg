@@ -12,7 +12,7 @@ tms install c4d.msg
 ```
 
 > [!TIP]
-> The c4d.msg file is located on the Community server, which is disabled by default. On a machine where it hasn't been enabled yet, run the following first: tms server-enable community
+> The c4d.msg file is located on the Community server, which is disabled by default. On a machine where it hasn't been enabled yet, run the following first: `tms server-enable community`
 >
 
 <br>
