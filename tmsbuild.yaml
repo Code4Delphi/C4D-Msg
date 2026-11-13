@@ -10,7 +10,10 @@ minimum required tmsbuild version: 3.5
 application:
   id: c4d.msg
   name: C4D Msg
+  description: With C4D-Msg you can control your system messages quickly, easily and centrally.
+  company name: Code4Delphi
   url: https://github.com/Code4Delphi/C4D-Msg
+  vcs protocol: git
 
 # Frameworks are just a group of supported IDEs and platforms. You can define as much as you want with any name you desire, and then combine them to specify what platforms and IDEs the packages support.
 supported frameworks:
