@@ -5,7 +5,7 @@ With C4D-Msg you can control your system messages quickly, easily and centrally
 
 ## ⚙️ Installation
 
-* Installation using the [**TMS Smart Setup**](https://doc.tmssoftware.com/smartsetup/):
+* Installation using the [**TMS Smart Setup**](https://doc.tmssoftware.com/smartsetup/download/index.html):
 
 ```
 tms install c4d.msg
