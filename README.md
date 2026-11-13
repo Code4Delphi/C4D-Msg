@@ -8,24 +8,6 @@ With C4D-Msg you can control your system messages quickly, easily and centrally
 
 
 
-## 📞 Contacts
-
-<p align="left">
-  <a href="https://t.me/Code4Delphi" target="_blank">
-    <img src="https://img.shields.io/badge/Telegram:-Join%20Channel-blue?logo=telegram">
-  </a> 
-  &nbsp;
-  <a href="mailto:contato@code4delphi.com.br" target="_blank">
-    <img src="https://img.shields.io/badge/E--mail-contato%40code4delphi.com.br-yellowgreen?logo=maildotru&logoColor=yellowgreen">
-  </a>
-   &nbsp;
-  <a href="https://www.youtube.com/@code4delphi" target="_blank">
-    <img src="https://img.shields.io/badge/YouTube:-Join%20Channel-red?logo=youtube&logoColor=red">
-  </a> 
-</p>
-
-
-
 ## ⚙️ Installation
 
 * Installation using the [**Boss**](https://github.com/HashLoad/boss):
@@ -112,3 +94,13 @@ To submit a pull request, follow these steps:
 4. Make the commit (`git commit -am 'Functionality or adjustment message'`)
 5. Push the branch (`git push origin Message about functionality or adjustment`)
 6. Open a pull request
+
+
+## 📞 Contatos
+[![Course](https://img.shields.io/badge/Course-Delphi-F00?logo=delphi)](https://code4delphi.github.io/ia-devs-delphi-lazarus/)
+[![Telegram](https://img.shields.io/badge/Telegram-Join-blue?logo=telegram)](https://t.me/Code4Delphi)
+[![YouTube](https://img.shields.io/badge/YouTube-Join-red?logo=youtube&logoColor=red)](https://www.youtube.com/@code4delphi)
+[![Instagram](https://img.shields.io/badge/Intagram-Follow-red?logo=instagram&logoColor=pink)](https://www.instagram.com/code4delphi/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/cesar-cardoso-dev)
+[![Blog](https://img.shields.io/badge/Blog-Code4Delphi-F00?logo=delphi)](https://code4delphi.com.br/blog/)
+[![E-mail](https://img.shields.io/badge/E--mail-Send-yellowgreen?logo=maildotru&logoColor=yellowgreen)](mailto:contato@code4delphi.com.br)
