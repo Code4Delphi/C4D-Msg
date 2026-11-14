@@ -17,6 +17,7 @@ application:
   license url: https://github.com/Code4Delphi/C4D-Msg/blob/master/LICENSE
   url: https://github.com/Code4Delphi/C4D-Msg
   vcs protocol: git
+  version file: version.txt
 
 # Frameworks are just a group of supported IDEs and platforms. You can define as much as you want with any name you desire, and then combine them to specify what platforms and IDEs the packages support.
 supported frameworks:
