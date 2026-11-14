@@ -12,6 +12,9 @@ application:
   name: C4D Msg
   description: With C4D-Msg you can control your system messages quickly, easily and centrally.
   company name: Code4Delphi
+  copyright: Code4Delphi
+  license: MIT
+  license url: https://github.com/Code4Delphi/C4D-Msg/blob/master/LICENSE
   url: https://github.com/Code4Delphi/C4D-Msg
   vcs protocol: git
 
